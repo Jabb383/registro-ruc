@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Registro RUC 2.0</title>
+
+<link rel="stylesheet" href="styles.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>📋 Registro de Empresas</h1>
+
+<p id="fecha"></p>
+
+</header>
+
+<div class="contenedor">
+
+<div class="card">
+
+<h2>Nuevo Registro</h2>
+
+<input
+type="text"
+id="ruc"
+maxlength="11"
+placeholder="RUC (11 dígitos)">
+
+<input
+type="text"
+id="rs"
+placeholder="Razón Social">
+
+<input
+type="text"
+id="dni1"
+maxlength="8"
+placeholder="DNI Responsable">
+
+<input
+type="text"
+id="dni2"
+maxlength="8"
+placeholder="DNI Supervisor">
+
+<textarea
+id="obs"
+placeholder="Observaciones (Opcional)">
+</textarea>
+
+<button id="guardar">
+
+💾 Guardar Registro
+
+</button>
+
+</div>
+
+<div class="busqueda">
+
+<input
+type="text"
+id="buscar"
+placeholder="🔍 Buscar por RUC, Empresa o DNI">
+
+</div>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>RUC</th>
+
+<th>Empresa</th>
+
+<th>DNI 1</th>
+
+<th>DNI 2</th>
+
+<th>Acciones</th>
+
+</tr>
+
+</thead>
+
+<tbody id="tabla">
+
+</tbody>
+
+</table>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
