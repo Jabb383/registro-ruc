@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Registro de Empresas</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="contenedor">
+
+    <h1>📋 Registro</h1>
+
+    <div class="card">
+
+        <label>RUC</label>
+        <input type="text" id="ruc" placeholder="Ingrese RUC">
+
+        <label>Razón Social</label>
+        <input type="text" id="rs" placeholder="Ingrese Razón Social">
+
+        <label>DNI 1</label>
+        <input type="text" id="dni1" placeholder="Ingrese DNI">
+
+        <label>DNI 2</label>
+        <input type="text" id="dni2" placeholder="Ingrese DNI">
+
+        <button id="guardar">
+            Guardar Registro
+        </button>
+
+    </div>
+
+    <div class="busqueda">
+
+        <input
+        type="text"
+        id="buscar"
+        placeholder="Buscar por RUC o Razón Social">
+
+    </div>
+
+    <table>
+
+        <thead>
+
+            <tr>
+
+                <th>RUC</th>
+                <th>Razón Social</th>
+                <th>DNI 1</th>
+                <th>DNI 2</th>
+                <th>Acciones</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody id="tabla">
+
+        </tbody>
+
+    </table>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
